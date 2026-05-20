@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kngu | Exquisite Floral Arrangements</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .fill-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+        /* Custom scrollbar for premium feel */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #fcf9f8; }
+        ::-webkit-scrollbar-thumb { background: #e1bfb8; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #8d706b; }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#1b1c1c",
+                        "on-tertiary-fixed": "#211a1a",
+                        "surface": "#fcf9f8",
+                        "on-tertiary-fixed-variant": "#4e4445",
+                        "on-surface": "#1b1c1c",
+                        "on-secondary-container": "#643685",
+                        "surface-dim": "#dcd9d9",
+                        "on-secondary-fixed-variant": "#5f3180",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#59413c",
+                        "on-primary-fixed-variant": "#8e1402",
+                        "surface-bright": "#fcf9f8",
+                        "inverse-surface": "#303030",
+                        "tertiary": "#64595a",
+                        "on-tertiary-container": "#fffbff",
+                        "surface-container-high": "#eae7e7",
+                        "background": "#fcf9f8",
+                        "outline-variant": "#e1bfb8",
+                        "tertiary-container": "#7e7272",
+                        "inverse-primary": "#ffb4a5",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#e3b5ff",
+                        "inverse-on-surface": "#f3f0ef",
+                        "surface-tint": "#b02e18",
+                        "primary-fixed-dim": "#ffb4a5",
+                        "tertiary-fixed": "#eedfdf",
+                        "tertiary-fixed-dim": "#d2c3c3",
+                        "on-error": "#ffffff",
+                        "primary": "#ad2b16",
+                        "surface-container": "#f0eded",
+                        "on-tertiary": "#ffffff",
+                        "surface-variant": "#e5e2e1",
+                        "secondary-container": "#dca7fe",
+                        "secondary": "#794a9a",
+                        "surface-container-low": "#f6f3f2",
+                        "primary-fixed": "#ffdad3",
+                        "surface-container-highest": "#e5e2e1",
+                        "secondary-fixed": "#f3daff",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed": "#2f004d",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed": "#3f0400",
+                        "on-primary-container": "#fffbff",
+                        "on-primary": "#ffffff",
+                        "outline": "#8d706b",
+                        "primary-container": "#cf442c",
+                        "on-secondary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "section-gap": "120px",
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-md": ["Libre Caslon Text"],
+                        "label-md": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-sm": ["Libre Caslon Text"],
+                        "display-lg": ["Libre Caslon Text"],
+                        "headline-lg": ["Libre Caslon Text"],
+                        "label-sm": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Libre Caslon Text"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                        "display-lg": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- Announcement Bar -->
+<div class="bg-on-background text-surface text-center py-2 text-label-sm tracking-widest relative z-50">
+        All featured product 50% off Shop Now
+        <button class="absolute right-margin-desktop top-1/2 -translate-y-1/2 hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined text-sm">close</span>
+</button>
+</div>
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-on-background sticky top-0 z-40 transition-all duration-300 border-b border-outline-variant dark:border-outline">
+<div class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="text-headline-sm font-headline-sm font-bold text-on-surface dark:text-surface-bright">Kngu.</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-label-md font-label-md text-primary dark:text-primary-fixed border-b-2 border-primary pb-1 transition-colors" href="#">Home</a>
+<a class="text-label-md font-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Shop</a>
+<a class="text-label-md font-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Blog</a>
+<a class="text-label-md font-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Pages</a>
+<a class="text-label-md font-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-6">
+<div class="hidden lg:flex items-center bg-surface-container rounded-full px-4 py-1.5 border border-outline-variant">
+<input class="bg-transparent border-none focus:ring-0 text-body-md w-40" placeholder="Search our store" type="text"/>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer">search</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors" data-icon="person">person</span>
+<div class="relative cursor-pointer group">
+<span class="material-symbols-outlined hover:text-primary transition-colors" data-icon="shopping_cart">shopping_cart</span>
+<span class="absolute -top-2 -right-2 bg-primary text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">3</span>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Slider Section -->
+<section class="relative overflow-hidden bg-[#F6F6F6] min-h-[600px] flex items-center">
+<div class="max-w-container-max mx-auto px-margin-desktop w-full grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div class="z-10 py-12">
+<div class="flex items-center gap-4 border-l-2 border-primary pl-4 mb-6">
+<span class="text-label-md text-on-surface-variant">20% Off For<br/>New Members</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-background mb-6 uppercase tracking-tight">HAPPY MOTHER’S DAY!</h1>
+<p class="text-body-lg text-on-surface-variant mb-10 max-w-md">Bouquets your mom will love! Hand-curated arrangements delivered with care.</p>
+<button class="bg-primary text-white px-8 py-4 rounded-lg font-label-md hover:scale-105 transition-transform duration-300 shadow-lg hover:bg-primary-container">
+                        START SHOPPING
+                    </button>
+</div>
+<div class="relative flex justify-center items-center">
+<img alt="Mother's Day Tulips" class="w-full h-auto object-cover rounded-xl shadow-2xl scale-110" data-alt="A beautiful overhead shot of vibrant pink and white tulips neatly arranged in a pastel pink wooden crate alongside soft blue and pink Easter eggs. The composition is clean and minimalist, set against a pristine white background that emphasizes the organic floral colors and soft spring palette. High-key natural lighting creates a professional e-commerce aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgLPRD703aXfqLeBsQt5oPMWUlcmJ1dTygZfpkg8ZcHRuGq8I2rM0KRdINlGnbetm0lwSH_3PFqkogI5uTJrLRsJh5_vRc6SrZWdrKc8AcYTqVWwmVrtueWvi4Q8b_XjzhEHLb6D5jNCiywCSo6lSn8j3-6TJiqhp36OdlsAjUVen4mf-z0mzkUeWBlvUrgnn2_ZNQ26v3tOGWupDJobyFU0Djd4T7w-lqKR9M2i0smIn1oSk2Wvwuo5tPt7Y96BYOb93eK0ISeuk"/>
+</div>
+</div>
+<!-- Slider Controls -->
+<button class="absolute left-8 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/80 hover:bg-white flex items-center justify-center text-on-surface transition-all">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="absolute right-8 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/80 hover:bg-white flex items-center justify-center text-on-surface transition-all">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</section>
+<!-- Value Propositions -->
+<section class="py-20 border-b border-outline-variant">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="flex items-start gap-4 p-6 hover:bg-surface-container rounded-xl transition-colors">
+<div class="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-orange-600 fill-icon">local_shipping</span>
+</div>
+<div>
+<h4 class="font-label-md text-on-surface mb-1">Free Delivery</h4>
+<p class="text-label-sm text-on-surface-variant">Free shipping around the world for all orders over $120</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-6 hover:bg-surface-container rounded-xl transition-colors">
+<div class="w-12 h-12 rounded-full bg-teal-100 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-teal-600 fill-icon">shopping_bag</span>
+</div>
+<div>
+<h4 class="font-label-md text-on-surface mb-1">Online Order</h4>
+<p class="text-label-sm text-on-surface-variant">Don't worry you can order Online by our Site</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-6 hover:bg-surface-container rounded-xl transition-colors">
+<div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-purple-600 fill-icon">eco</span>
+</div>
+<div>
+<h4 class="font-label-md text-on-surface mb-1">Freshness</h4>
+<p class="text-label-sm text-on-surface-variant">You have freshness flowers every single order</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-6 hover:bg-surface-container rounded-xl transition-colors">
+<div class="w-12 h-12 rounded-full bg-lime-100 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-lime-600 fill-icon">palette</span>
+</div>
+<div>
+<h4 class="font-label-md text-on-surface mb-1">Made By Artists</h4>
+<p class="text-label-sm text-on-surface-variant">World for all made by artists orders over now</p>
+</div>
+</div>
+</div>
+</section>
+<!-- New Products Section -->
+<section class="py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<h2 class="font-headline-lg text-headline-lg mb-4">New Products</h2>
+<p class="text-body-md text-on-surface-variant">A perfect blend of creativity, energy, communication, happiness and love. Let us arrange a smile for you.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Product 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container relative overflow-hidden rounded-lg border border-outline-variant/30 group-hover:shadow-lg transition-all duration-300">
+<span class="absolute top-4 left-4 bg-primary text-white text-[10px] px-2 py-0.5 rounded font-bold z-10">Soldout</span>
+<img alt="Spring Snowflake" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A delicate arrangement of white snowdrops and light pink blossoms in a simple white ceramic vase. The lighting is soft and airy, creating a gentle, ethereal mood. The background is a clean, neutral gray, perfect for highlighting the subtle textures of the petals. High-end editorial photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAl6MbuJJCp5FCh5mT_DlCEAro0fMvXC1kMXfdf0ZMgkbYCEJu0Ki-SwfFWUVbFl1IoyyLTYcbWggPjlYrmjzcJjxMRAWqENfqIz2XA14OFmM_tnSvzWXykEot4D_Q590D0k1xPg6u8h9kC1PWcJyxs8NS-d__K3oJ3Vi8JhMCQ4Gmgfxjmmwzp_YSUnh7SVuGKyDTW9Y1BABUYudikjZzY_ESTmt6YFMbSwhH93U1gmynIhs7fUNBfiHG5Qo8_Cb0uRUxGBYJXgkU"/>
+<div class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2">
+<button class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all"><span class="material-symbols-outlined">favorite</span></button>
+<button class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all"><span class="material-symbols-outlined">visibility</span></button>
+</div>
+</div>
+<div class="mt-6 text-center">
+<div class="flex justify-center gap-0.5 mb-2">
+<span class="material-symbols-outlined text-xs text-orange-400 fill-icon">star</span>
+<span class="material-symbols-outlined text-xs text-orange-400 fill-icon">star</span>
+<span class="material-symbols-outlined text-xs text-orange-400 fill-icon">star</span>
+<span class="material-symbols-outlined text-xs text-orange-400 fill-icon">star</span>
+<span class="material-symbols-outlined text-xs text-outline-variant">star</span>
+</div>
+<h3 class="font-headline-sm text-body-md group-hover:text-primary transition-colors">Spring Snowflake</h3>
+<div class="flex justify-center gap-2 mt-1">
+<span class="text-primary font-bold">$19.00</span>
+<span class="text-on-surface-variant line-through text-label-sm">$29.00</span>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container relative overflow-hidden rounded-lg border border-outline-variant/30 group-hover:shadow-lg transition-all duration-300">
+<img alt="Rock Soapwort" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A single, majestic light pink rose with a perfectly symmetrical bloom, standing elegantly in a slender glass vase. Minimalist studio lighting casts soft shadows, emphasizing the velvety texture of the petals. The color palette consists of pale pinks, deep greens, and a clean white background, reflecting a luxurious and romantic brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9OfXYh5ndvhjHSEHITXu-llRg0o8ZM2IJ18gXKau06AZ0IM972hmICl9KT_-L9FWsQzJ62aNsgXAjxenMj0vEBqa2He1VcVJfhsI_wdHL7PD4H7wwZ4Sqx_fEKErkSxPlLJQelj3dXWYRWHBGjp6GXv9202dZ6fp5xf1cRVzACm8MQRXSLtYbOxEJEsXgm2k-wIsekHC6-b8pg3FyPsScPUxxMXTq1uD-QgXHZ1Cai5al-7VgZYtmEfDeFU1_wBdl1DwWw_2IFh8"/>
+</div>
+<div class="mt-6 text-center">
+<div class="flex justify-center gap-0.5 mb-2">
+<span class="material-symbols-outlined text-xs text-orange-400 fill-icon">star</span>
+<span class="material-symbols-outlined text-xs text-orange-400 fill-icon">star</span>
+<span class="material-symbols-outlined text-xs text-orange-400 fill-icon">star</span>
+<span class="material-symbols-outlined text-xs text-orange-400 fill-icon">star</span>
+<span class="material-symbols-outlined text-xs text-orange-400 fill-icon">star</span>
+</div>
+<h3 class="font-headline-sm text-body-md group-hover:text-primary transition-colors">Rock Soapwort</h3>
+<div class="mt-1"><span class="text-primary font-bold">$50.00</span></div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container relative overflow-hidden rounded-lg border border-outline-variant/30 group-hover:shadow-lg transition-all duration-300">
+<span class="absolute top-4 left-4 bg-on-background text-white text-[10px] px-2 py-0.5 rounded font-bold z-10">-35%</span>
+<div class="absolute top-4 right-4 text-right z-10 hidden lg:block">
+<div class="text-[10px] font-bold text-on-surface-variant uppercase tracking-tighter">
+<div class="mb-1"><span class="text-primary block">00</span> Days</div>
+<div class="mb-1"><span class="text-primary block">00</span> Hour</div>
+<div class="mb-1"><span class="text-primary block">00</span> mint</div>
+<div><span class="text-primary block">00</span> Sec</div>
+</div>
+</div>
+<img alt="Scarlet Sage" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A lush bouquet of vibrant magenta peonies tightly packed in a modern white vase. The intense color of the flowers provides a striking contrast against the muted, high-key studio background. Every petal is crisply defined by soft side-lighting, showcasing the premium quality of the floral arrangement. The mood is energetic and cheerful." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBngGIZF4xoiMAc5iZVVBREe-2ncXFhI8buuHjQsQaeUrqHCtyfdpJljkPJO7OcR04uan0_YjSGemHkv871MnTjZdEu1fExo18AvVX1Ynb_TLrvdTlrHbZ11xQyZUW_YgYPkPl8tlGDZO_M_Qs3BZfR60p9VyOTREMOrmiN6hx0-_QLXsyfXAXz6_f_Lo6n2ZxVc4bWaUcEGbFLrUj4sHoW-2JfGFMBzPtbDJsbso_Y9qDx6MK4-ApEvsIXDutolk5i5yxRRSrOvE4"/>
+</div>
+<div class="mt-6 text-center">
+<div class="flex justify-center gap-0.5 mb-2">
+<span class="material-symbols-outlined text-xs text-orange-400 fill-icon">star</span>
+<span class="material-symbols-outlined text-xs text-orange-400 fill-icon">star</span>
+<span class="material-symbols-outlined text-xs text-orange-400 fill-icon">star</span>
+<span class="material-symbols-outlined text-xs text-orange-400 fill-icon">star</span>
+<span class="material-symbols-outlined text-xs text-outline-variant">star</span>
+</div>
+<h3 class="font-headline-sm text-body-md group-hover:text-primary transition-colors">Scarlet Sage</h3>
+<div class="flex justify-center gap-2 mt-1">
+<span class="text-primary font-bold">$39.00</span>
+<span class="text-on-surface-variant line-through text-label-sm">$60.00</span>
+</div>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container relative overflow-hidden rounded-lg border border-outline-variant/30 group-hover:shadow-lg transition-all duration-300">
+<img alt="Foxglove Flower" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Deep purple anemones with dark centers arranged in a whimsical yellow teapot. The contrasting color palette of purple and bright yellow creates a playful yet sophisticated visual. The shot is well-lit with natural-looking studio light, highlighting the organic curves of the teapot and the delicate texture of the anemone petals against a clean white backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuVd_fWasSG6LbWQxD2--sDnNqpNdt8_DBdU_pOdx3U0rCrPzsWyi-ZC6-9ZkxULWlGdEW58RI2boE9576S4QTxmTjMvZZgF2qQ29HjSIQiH7ryotE7by3IlXLHg6tTQs8e6kL-Y7D4aWrCetKakr1piIy84ighDT9yxHwu_NITq3jX3cpMSjmMRRbQqfEUlxdir146ZyuCrpku0DLY5_ftbnGGaudvKSAxvFI_MGCvKGA9sx-IoX_IMFSWp2fUzTqcVyRg6OP3xs"/>
+</div>
+<div class="mt-6 text-center">
+<div class="flex justify-center gap-0.5 mb-2">
+<span class="material-symbols-outlined text-xs text-orange-400 fill-icon">star</span>
+<span class="material-symbols-outlined text-xs text-orange-400 fill-icon">star</span>
+<span class="material-symbols-outlined text-xs text-orange-400 fill-icon">star</span>
+<span class="material-symbols-outlined text-xs text-orange-400 fill-icon">star</span>
+<span class="material-symbols-outlined text-xs text-outline-variant">star</span>
+</div>
+<h3 class="font-headline-sm text-body-md group-hover:text-primary transition-colors">Foxglove Flower</h3>
+<div class="mt-1"><span class="text-primary font-bold">$79.00</span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Valentine Promo -->
+<section class="bg-surface-container py-20">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="relative group">
+<div class="overflow-hidden rounded-2xl aspect-[1.2/1]">
+<img alt="Floral Workshop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A master florist's workbench cluttered with vibrant yellow daffodils and fresh greenery. Natural morning light spills across the scene, highlighting the textures of the stems and the delicate flower heads. In the background, professional floral arranging tools are visible, suggesting a bespoke, artisanal process. The overall mood is creative, authentic, and high-end boutique." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAhTj4UeU9t_QcwCKORR5IN99XQdxKC750xHNxtfqc3XcjDQKkc7RMQ9RoA4Q_Q_wLIOb0zNWjna17L2IODB4dRuLSP7Kl63a4DIOdHL2uK2NQMBFunvBrSOyTHjIEYjJPBFWaU67vBOU86ngI45b5JBF9VrKrXqK0tZ2tHS-C3Rtp1ae0862BGhrAcy8EeffC7k5zsr4wQOHL1_gaWSgkl-76z3GIS_YMxJtt5_sdu67hyx6Gbpy8Nb0UD80ewiXEaa1HpOTxfYU"/>
+</div>
+<div class="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/10 rounded-full blur-3xl -z-10"></div>
+</div>
+<div>
+<h2 class="font-headline-lg text-headline-lg mb-6 max-w-md leading-tight">Suprise Your Valentine! Let us arrange a smile for Her.</h2>
+<p class="text-body-md text-on-surface-variant mb-8 italic">Where flowers are our inspiration to create lasting memories. Whatever the occasion inspiration to create lasting memories....</p>
+<ul class="space-y-4 mb-10">
+<li class="flex items-center gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="text-body-md text-on-surface">Hand picked just for you.</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="text-body-md text-on-surface">Hand picked just for you.</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="text-body-md text-on-surface">Hand picked just for you.</span>
+</li>
+</ul>
+<button class="bg-primary text-white px-10 py-4 rounded-lg font-label-md hover:scale-105 transition-transform duration-300 shadow-md">
+                        MORE DETAILS
+                    </button>
+</div>
+</div>
+</section>
+<!-- Featured Items -->
+<section class="py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<h2 class="font-headline-lg text-headline-lg mb-4">Featured Items</h2>
+<p class="text-body-md text-on-surface-variant">A perfect blend of creativity, energy, communication, happiness and love. Let us arrange a smile for you.</p>
+</div>
+<div class="flex justify-center gap-8 mb-16 border-b border-outline-variant/30 pb-4">
+<button class="text-label-md text-primary font-bold border-b-2 border-primary pb-4 -mb-4 uppercase tracking-wider">New</button>
+<button class="text-label-md text-on-surface-variant hover:text-primary transition-colors uppercase tracking-wider">Featured</button>
+<button class="text-label-md text-on-surface-variant hover:text-primary transition-colors uppercase tracking-wider">Best Sellers</button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Repeated pattern from New Products for Featured Items -->
+<!-- Item 1 with -34% -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container relative overflow-hidden rounded-lg">
+<span class="absolute top-4 left-4 bg-on-background text-white text-[10px] px-2 py-0.5 rounded font-bold z-10">-34%</span>
+<img alt="Lity Majesty Palm" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="An exotic pink torch ginger flower standing tall and vibrant. The background is a clean white studio setting, allowing the intricate, geometric layers of the bracts to take center stage. Soft, even lighting eliminates harsh shadows, emphasizing the premium quality and unique structure of this rare floral specimen. Editorial-style product photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQOZW0Wpzy5OkoxypVnkrH9m_cLr19jzfdM95UrJEb9SeFF1fS5kY2H9SVzlHIINdOsAejqJh5gUW4vBIlmkxf8zVfVWN02JHjivwnU5kdUxEbeVrqZADPZ3SCx80FVK6SzC1pF5MsaTq1VkkuAbi_AuVU0pb5L2KMFh_pVK4jDEfVwVtLBrrW5Ro5SBS893owfCI-Rao9ZU890_bcIzc68QyujGZcpUQIsu2v2xFKdSjM4_vAr4Otj1vYwFOm4EWA40NEIWhzTak"/>
+</div>
+<div class="mt-4 text-center">
+<h3 class="font-label-md text-body-md mb-1">Lity Majesty Palm</h3>
+<div class="flex justify-center gap-2">
+<span class="text-primary font-bold">$19.00</span>
+<span class="text-on-surface-variant line-through text-label-sm">$29.00</span>
+</div>
+</div>
+</div>
+<!-- Item 2 with -10% -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container relative overflow-hidden rounded-lg">
+<span class="absolute top-4 left-4 bg-on-background text-white text-[10px] px-2 py-0.5 rounded font-bold z-10">-10%</span>
+<img alt="Wild Roses" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A charming cluster of small wild pink roses in a rustic white pot. The lighting is warm and golden, evoking the feeling of a late afternoon in a garden. The composition is balanced and elegant, focusing on the abundance of the blooms and the freshness of the green leaves. A lifestyle floral image for a high-end brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmtrvC2pDgGJfKi3FRT8eAzHUOe490AKZEbcRdQBHNjpnIGpVO8S0_0SFLjchh2VHZ8NokAFs5hTqtDH0j4hN5qsy7S-90eODZiF3RA5kSWHEin8Ay88tChAnZSeHeBYxGG4Z1fuvaFBw2QctovpoDWZeE9Uo0daiEB_71o1r2ayxKSN5O61GsMs9o2jFI2T5bgkbphsPQ2sX0bQs7qBF23JpGM-6YcxTSieG4YjKvaIVI4ryBp7w_WBROs_X8xzvvcwTvv91aFcs"/>
+</div>
+<div class="mt-4 text-center">
+<h3 class="font-label-md text-body-md mb-1">Wild Roses</h3>
+<div class="flex justify-center gap-2">
+<span class="text-primary font-bold">$19.00</span>
+<span class="text-on-surface-variant line-through text-label-sm">$21.00</span>
+</div>
+</div>
+</div>
+<!-- Item 3 Soldout -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container relative overflow-hidden rounded-lg">
+<span class="absolute top-4 left-4 bg-primary text-white text-[10px] px-2 py-0.5 rounded font-bold z-10">Soldout</span>
+<img alt="Spring Snowflake" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbQ_lM3tidURVU2jZ1KfjFnHaq9KUs_2tunh9syDVNo6hRUts1NFsUlWAX0wJ5ZtlHzFOmGHco6AoSddLMCai8wvuY_LzHEArC2Pb246s2le-xi4VqXeX3pciOOOJPTG5YV9Y1YTFpbdgLs4jl6ccF5ewR1QibcU3jNAzjEsFI1JOHu7i0s45dhFuIxIXO3dpDS-9DuCpEFrM4DXFK5xx5q-Uv6v6G7NVi_HjBRu8GabnFbAYssrJPlinWOtAEQ58PcZTqgajy_wU"/>
+</div>
+<div class="mt-4 text-center">
+<h3 class="font-label-md text-body-md mb-1">Spring Snowflake</h3>
+<div class="flex justify-center gap-2">
+<span class="text-primary font-bold">$19.00</span>
+<span class="text-on-surface-variant line-through text-label-sm">$29.00</span>
+</div>
+</div>
+</div>
+<!-- Item 4 -27% -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container relative overflow-hidden rounded-lg">
+<span class="absolute top-4 left-4 bg-on-background text-white text-[10px] px-2 py-0.5 rounded font-bold z-10">-27%</span>
+<img alt="Rock Soapwort" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD44K0QCR5TR_GIiwxDnRul1q3lya_a-U_AGBCcu93K5ej2iyHB9oIie5_NlfPDuC_45fwazvgylLPMJnBzgD-IECIVI6aLNuqtD3ZliEYZTFIw6K8PggUcsYWlbYpEz2gQAKyZNrPqjb2CLrr-m2oEaegwuvrqycNP0hT0MqGnWkjE01R09D8ufYpcslP4eXbAkrC7gR-ulLkq8yO8S7SjETwtVZZr1HSXZztMbrg2iElD5ZiJG5T0gZGTm1oTU3sm4diduNskfDU"/>
+</div>
+<div class="mt-4 text-center">
+<h3 class="font-label-md text-body-md mb-1">Rock Soapwort</h3>
+<div class="flex justify-center gap-2">
+<span class="text-primary font-bold">$55.00</span>
+<span class="text-on-surface-variant line-through text-label-sm">$75.00</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonial Section -->
+<section class="relative py-section-gap overflow-hidden flex items-center justify-center">
+<div class="absolute inset-0 z-0 opacity-10">
+<img alt="Background Tulips" class="w-full h-full object-cover grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZe7_UxOLwZOh1Z6Q-ZIiuRWKEslUbej2ge7p7Lto16EgnFmijdXYSYFOCBiUg6MWzSfiKUS8mUbkQBM6FCrQbI4huB7FJMJSvKpF9cmMTYa5JEDD69A3K3N_bLo6okkhbjiYSD6LwzTJfQCDBCaPO7Yt7UCWkxUN9I-Z-4zsRWDU9Yi_qYVTJaMvE9c5xzgPD88CsEUMcQHBJZZMRSc0G6moxk-Qe8OjbiOrNCHm6G_82OXi80GcAtvNcxKBNbROK8IYH9QozVm8"/>
+</div>
+<div class="relative z-10 max-w-3xl mx-auto px-margin-desktop text-center">
+<div class="flex justify-center gap-8 mb-12">
+<span class="material-symbols-outlined text-outline-variant text-4xl transform rotate-180">format_quote</span>
+</div>
+<p class="font-headline-md italic text-on-surface mb-12 text-2xl leading-relaxed">
+                    "Felis eu pede mollis pretium. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus lingua. felis eu pede mollis pretium."
+                </p>
+<div class="flex flex-col items-center">
+<img alt="Torvi COO" class="w-20 h-20 rounded-full object-cover mb-4 border-2 border-primary ring-4 ring-primary/20" data-alt="A professional headshot of a female executive with a warm smile. She is in her late 30s with styled hair and professional attire. The lighting is soft and flattering, typical of high-end corporate portraiture. The background is slightly out of focus, suggesting a modern, stylish office environment. Her gaze is confident and approachable." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYUGnrCK0zlYtlBmctbEpL24kkpXNSbtQrQVPcroJhp9XKl__IVefCJyMzKjsB612cH7nVTSUIJ3NfSvmuVJ3WyiLF6YerfU87tsG_6p0n00FranytpL8jdgWZhO4bFASMZc8JbgK3STo4AeFMyIwZ1IUzA1cINBVEY4GPmf0vtgCvT0FdBxZ8U2mUKm2AJmry_dxruhIlRilh65CH43fQWjC8Xj4x3snHuHZtEZY8EWZJi6s9WARXTBFHW4XAaZlJ_IkQ3sIeB0w"/>
+<h4 class="font-label-md text-on-surface tracking-widest">TORVI / COO</h4>
+</div>
+</div>
+</section>
+<!-- Flower Experts -->
+<section class="py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<h2 class="font-headline-lg text-headline-lg mb-4">Flower Experts</h2>
+<p class="text-body-md text-on-surface-variant">A perfect blend of creativity, energy, communication, happiness and love. Let us arrange a smile for you.</p>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Expert 1 -->
+<div class="text-center group">
+<div class="relative mb-6 inline-block">
+<div class="w-48 h-48 sm:w-64 sm:h-64 rounded-full overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500 border-4 border-transparent group-hover:border-primary">
+<img alt="Marcos Alonso" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcZwO7GuLky13vg5bU5qLnJRK-WXjbLtLAx2JIt-gVyi3KodZdQdIbx0ijLclBf7EUpaeDakaWnyNqhhWIRphczUA9lu-utgu0OcxW8-ZxbOqqUf0X0UON57MKx-3hu_NCAcoaRRWgUozrWCu6j08vGRFQnxmLTcWQgOzmcXvGanROHPj4SJl1IYnLZEVKrBbfas6pGZvoTi6mbSFHGEKgCyqgsoL8d-k-cicwyBRowDpWXAhOOvpN7ftBZ8qVIGdPWH9zy6xpSjA"/>
+</div>
+</div>
+<h4 class="font-headline-sm text-body-lg mb-1 group-hover:text-primary transition-colors">Marcos Alonso</h4>
+<p class="text-label-sm text-on-surface-variant uppercase tracking-widest">Biologist</p>
+</div>
+<!-- Expert 2 -->
+<div class="text-center group">
+<div class="relative mb-6 inline-block">
+<div class="w-48 h-48 sm:w-64 sm:h-64 rounded-full overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500 border-4 border-transparent group-hover:border-primary">
+<img alt="Shara friken" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVMthrX3NFSJjPzR18mLItqySdW6xiCvAuYb_WEc0hsvp0ph-E7gFzX0xHlicehKSnERyBoumAIUnNWFjvyZayKJEakN3J8IVVeGkh1HU_rrYzzNL-W49qT1Iqol9Em1amMOBl6dXXul_GlqZeKKHbaXyUkG9ZYB-IUhyjGj1rQkcKjNbh0wj8hQVJnDqKsivQfVD0pkARPKnjlVYs3m1Co_bePjIqdVcgtn2sjTWX3o-vJsIjSDf4F82m9hYmVDdDx6DUd_z0iyQ"/>
+</div>
+</div>
+<h4 class="font-headline-sm text-body-lg mb-1 group-hover:text-primary transition-colors">Shara friken</h4>
+<p class="text-label-sm text-on-surface-variant uppercase tracking-widest">Photographer</p>
+</div>
+<!-- Expert 3 -->
+<div class="text-center group">
+<div class="relative mb-6 inline-block">
+<div class="w-48 h-48 sm:w-64 sm:h-64 rounded-full overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500 border-4 border-transparent group-hover:border-primary">
+<img alt="Torvi greac" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtUvGBSNvjiawA2AxNGA57vKwBU_3rtOBd_r6TATtog9BdmSVsPFSe4usJWJDht1Q8v50YEeO5RYhNhQ1zrnDd3E7huB8Vj5VhdAnyCxqpCU5zmRWPrQlnxvW1OUJE4F07Yl6BtVN5E1-Y31rkvPL0rxd62Nsrj6osFFe0rZfDGPSSIZ2Tk03wpNbp3wIoIoR3SNkqEQtDHxjpgRTVZ3Icq_BE02HqCoYj_eIA5Ohi7pk-5m_kYek6KvAjQU-9FEIieubyl4omyEs"/>
+</div>
+</div>
+<h4 class="font-headline-sm text-body-lg mb-1 group-hover:text-primary transition-colors">Torvi greac</h4>
+<p class="text-label-sm text-on-surface-variant uppercase tracking-widest">Founder</p>
+</div>
+<!-- Expert 4 -->
+<div class="text-center group">
+<div class="relative mb-6 inline-block">
+<div class="w-48 h-48 sm:w-64 sm:h-64 rounded-full overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500 border-4 border-transparent group-hover:border-primary">
+<img alt="Alonso Gomej" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDErU7NQ2l8Zu_GfbSuLybiMRSTLe2MeUwpdOcsqjlUV1iC193fDoW3BxxBbE35bzaAPOqEgn2OVRDqBXyvyZ9BgXqdqMHOu3j4Al60ezQPIgXZ2dWp11CJjKdrS5_QKsYTcvG3RMzZP-5AKb7nFQHlOAI9D_EXMxeYy4qkryi0k8Bv2_JZmW7-EQ0vQqk9t8OYXC4RtGl__nLEMkW-fdtBXDdTQmhfTTytt4FGodoa3eR6UmwNENXW0HoAh_obLzDv_NbHC0JCzHU"/>
+</div>
+</div>
+<h4 class="font-headline-sm text-body-lg mb-1 group-hover:text-primary transition-colors">Alonso Gomej</h4>
+<p class="text-label-sm text-on-surface-variant uppercase tracking-widest">Florist</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Blog Feed -->
+<section class="py-section-gap bg-surface-container">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<h2 class="font-headline-lg text-headline-lg mb-4">From Our Blog</h2>
+<p class="text-body-md text-on-surface-variant">A perfect blend of creativity, energy, communication, happiness and love. Let us arrange a smile for you.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Blog 1 -->
+<article class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group">
+<div class="aspect-video overflow-hidden">
+<img alt="Flower Beauty" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A serene arrangement of elegant white tulips set against a soft, creamy background. The image captures the fresh, crisp quality of the petals and the vibrant green of the stems. Soft daylight filters in, creating delicate highlights and gentle shadows. This clean and modern floral shot reflects a high-end, sophisticated lifestyle aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4EKLI7Jcw5We9W2gcmqlEUX1oXVJvdoegb-vU5Kxkb7VSOJgxtapQLiTptpmw7BUT8D7loJAkwecKCNLY2HAzL74ZR0A247Py8aitmc3GQg9JDlJcaY4lWMEVSz4xHniHzoC3FiGnsY8GH9We_zKwFftCHRs5XRUVozk6CMF6keA3lIm5WRU68ybfU-3Fqx5k6_rOis2f7DjmhgXT__QMTxkMr0yeZMdXEE4pjwnXt1rLZl_0XjSjvocvgrmrvwpT2ah7WcrHPSQ"/>
+</div>
+<div class="p-8">
+<h3 class="font-headline-sm text-xl mb-3 group-hover:text-primary transition-colors">Flower Beauty</h3>
+<p class="text-label-sm text-primary mb-4 font-bold">By Shopify Team HasTheme / August 12, 2022</p>
+<p class="text-body-md text-on-surface-variant mb-6 line-clamp-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidid...</p>
+<div class="flex justify-between items-center border-t border-outline-variant pt-4">
+<a class="text-label-md font-bold text-on-surface hover:text-primary transition-colors" href="#">Continue Reading</a>
+<div class="flex items-center gap-1 text-on-surface-variant text-label-sm">
+<span class="material-symbols-outlined text-sm">chat_bubble_outline</span> 0
+                                </div>
+</div>
+</div>
+</article>
+<!-- Blog 2 -->
+<article class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group">
+<div class="aspect-video overflow-hidden">
+<img alt="Local Florists" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A bridal bouquet featuring white roses and lush eucalyptus greenery, held by a bride in a delicate lace dress. The focus is on the intricate textures of the flowers and the organic, hand-tied arrangement style. Warm, romantic lighting creates a dreamy, celebratory mood. Professional wedding photography style that feels both intimate and high-end." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2ysC-kfu63grV21366rRLebJqFEZcv5c4Ca2n2Ri3gnnK37aA2TPyqHeNSq7LnYtukmbq0-0tiuXM4zty22EubSHdCmrSW2sgzL8XipyXLVAKu0Mm5WmdxIWSTOjDDKViykYC9NHZKF83i3stBiFCgONV5iSbEHpBELEPS6taR3P4kGrve8N0jFwTBL77WLe5XaiOCblUKslPckoquFWOC8esMVp7iz0VuRDGKGktpJbvTsmhGn5JYlQTLrOOHsN1NaFmkDlGY1Y"/>
+</div>
+<div class="p-8">
+<h3 class="font-headline-sm text-xl mb-3 group-hover:text-primary transition-colors">Local Florists</h3>
+<p class="text-label-sm text-primary mb-4 font-bold">By Shopify Team HasTheme / August 12, 2022</p>
+<p class="text-body-md text-on-surface-variant mb-6 line-clamp-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidid...</p>
+<div class="flex justify-between items-center border-t border-outline-variant pt-4">
+<a class="text-label-md font-bold text-on-surface hover:text-primary transition-colors" href="#">Continue Reading</a>
+<div class="flex items-center gap-1 text-on-surface-variant text-label-sm">
+<span class="material-symbols-outlined text-sm">chat_bubble_outline</span> 0
+                                </div>
+</div>
+</div>
+</article>
+<!-- Blog 3 -->
+<article class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group">
+<div class="aspect-video overflow-hidden">
+<img alt="Flower Power" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A heartwarming scene of a young girl giving a bouquet of colorful flowers to her mother in a bright, modern living room. The shot is candid and joyful, filled with warm, natural sunlight that highlights the vibrant colors of the blooms and the genuine emotion of the moment. The interior is tastefully decorated, reflecting a high-quality lifestyle." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvzbQRUURFw7ofrU1zM59RO8mzX9_jHK8cDr9AgFlDhhoJrTZXUBSCHdcdU1oNAZINLhDhXOiDiuszWO5vHSLQZlM1mDhqDvgq9XqfGSJYak3L_VM4nUj5xfpbkrv7up89eUhyOUznY-bP-SQZ9398wNz-azR_sQxwWyVe8r_JARVTJyf1m5T6_Yn8gSa6aVRx9rbb2iI1wliCsmyG6z5Kmi9q6EkOzYAsByxCXIgA-F4PJrVcoJp6kYRwhuKMqIu2udbIFm6Y-O8"/>
+</div>
+<div class="p-8">
+<h3 class="font-headline-sm text-xl mb-3 group-hover:text-primary transition-colors">Flower Power</h3>
+<p class="text-label-sm text-primary mb-4 font-bold">By Shopify Team HasTheme / August 12, 2022</p>
+<p class="text-body-md text-on-surface-variant mb-6 line-clamp-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidid...</p>
+<div class="flex justify-between items-center border-t border-outline-variant pt-4">
+<a class="text-label-md font-bold text-on-surface hover:text-primary transition-colors" href="#">Continue Reading</a>
+<div class="flex items-center gap-1 text-on-surface-variant text-label-sm">
+<span class="material-symbols-outlined text-sm">chat_bubble_outline</span> 0
+                                </div>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Newsletter -->
+<section class="py-20 bg-surface">
+<div class="max-w-container-max mx-auto px-margin-desktop text-center">
+<h2 class="font-headline-lg text-headline-lg mb-10">Join The Colorful Bunch!</h2>
+<form class="max-w-2xl mx-auto flex flex-col sm:flex-row gap-0 border-b border-on-background items-center">
+<span class="material-symbols-outlined text-on-surface-variant px-4">mail</span>
+<input class="flex-grow bg-transparent border-none py-4 focus:ring-0 text-body-lg" placeholder="Your email address" required="" type="email"/>
+<button class="font-label-md tracking-widest px-8 py-4 uppercase hover:text-primary transition-colors" type="submit">SUBSCRIBE</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-on-background dark:bg-surface-container-lowest text-surface overflow-hidden">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter px-margin-desktop py-section-gap max-w-container-max mx-auto">
+<!-- Brand Info -->
+<div class="space-y-6">
+<div class="text-headline-sm font-headline-sm font-bold text-surface dark:text-on-surface">Kngu.</div>
+<p class="text-body-md text-surface-variant dark:text-on-surface-variant opacity-80 max-w-xs">
+                    A perfect blend of creativity, energy, communication, happiness and love. Let us arrange a smile for you.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-surface-variant flex items-center justify-center hover:bg-primary transition-all group" href="#">
+<span class="material-symbols-outlined text-sm group-hover:scale-110">social_leaderboard</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-surface-variant flex items-center justify-center hover:bg-primary transition-all group" href="#">
+<span class="material-symbols-outlined text-sm group-hover:scale-110">share</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-surface-variant flex items-center justify-center hover:bg-primary transition-all group" href="#">
+<span class="material-symbols-outlined text-sm group-hover:scale-110">public</span>
+</a>
+</div>
+</div>
+<!-- Column 2 -->
+<div>
+<h4 class="text-label-md font-bold uppercase tracking-widest mb-8 text-primary-fixed">Information</h4>
+<ul class="space-y-4">
+<li><a class="text-label-sm text-surface-variant hover:text-primary-fixed-dim transition-colors" href="#">Search Terms</a></li>
+<li><a class="text-label-sm text-surface-variant hover:text-primary-fixed-dim transition-colors" href="#">Advanced Search</a></li>
+<li><a class="text-label-sm text-surface-variant hover:text-primary-fixed-dim transition-colors" href="#">Helps &amp; Faqs</a></li>
+<li><a class="text-label-sm text-surface-variant hover:text-primary-fixed-dim transition-colors" href="#">Store Location</a></li>
+<li><a class="text-label-sm text-surface-variant hover:text-primary-fixed-dim transition-colors" href="#">Orders &amp; Returns</a></li>
+</ul>
+</div>
+<!-- Column 3 -->
+<div>
+<h4 class="text-label-md font-bold uppercase tracking-widest mb-8 text-primary-fixed">My Account</h4>
+<ul class="space-y-4">
+<li><a class="text-label-sm text-surface-variant hover:text-primary-fixed-dim transition-colors" href="#">Delivery</a></li>
+<li><a class="text-label-sm text-surface-variant hover:text-primary-fixed-dim transition-colors" href="#">Legal Notice</a></li>
+<li><a class="text-label-sm text-surface-variant hover:text-primary-fixed-dim transition-colors" href="#">Secure payment</a></li>
+<li><a class="text-label-sm text-surface-variant hover:text-primary-fixed-dim transition-colors" href="#">Sitemap</a></li>
+<li><a class="text-label-sm text-surface-variant hover:text-primary-fixed-dim transition-colors" href="#">About us</a></li>
+</ul>
+</div>
+<!-- Column 4 -->
+<div>
+<h4 class="text-label-md font-bold uppercase tracking-widest mb-8 text-primary-fixed">Customer Service</h4>
+<ul class="space-y-4">
+<li><a class="text-label-sm text-surface-variant hover:text-primary-fixed-dim transition-colors" href="#">My Account</a></li>
+<li><a class="text-label-sm text-surface-variant hover:text-primary-fixed-dim transition-colors" href="#">Terms of Use</a></li>
+<li><a class="text-label-sm text-surface-variant hover:text-primary-fixed-dim transition-colors" href="#">Deliveries &amp; Returns</a></li>
+<li><a class="text-label-sm text-surface-variant hover:text-primary-fixed-dim transition-colors" href="#">Gift card</a></li>
+<li><a class="text-label-sm text-surface-variant hover:text-primary-fixed-dim transition-colors" href="#">Legal Notice</a></li>
+</ul>
+</div>
+</div>
+<!-- Copyright Row -->
+<div class="border-t border-surface-variant/20">
+<div class="max-w-container-max mx-auto px-margin-desktop py-8 flex flex-col md:row justify-between items-center gap-6">
+<p class="text-label-sm text-surface-variant/60">Copyright 2026. All Rights Reserved</p>
+<div class="flex items-center gap-4 opacity-80">
+<div class="bg-white rounded px-2 py-1"><img alt="Visa" class="h-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8-gPkJjnr9YUmul5wcoeu_d280ZVU8-3NJ4kp5D8a4WMyXemVHL9wz7h73L8u-H5Hjlz7IJcZDLfp59FkQeQBiTzIAZ_aw3zhAxbMFKotr6ylpb34IMO7K8QURvB5tjhpwKayelmZ__ztz8YxhRR_gZtYQjUXCP_OOmSgCRdnuVFX35DRdEKKp2wXdG0c0DIRXP69xTmDOidkkmocf4-TRgxz4L1wjAFm2h0-Nr3E7SFwxDGKR2bo1x7hzhVtG3TAudFe0RMXKt8"/></div>
+<div class="bg-white rounded px-2 py-1"><img alt="Mastercard" class="h-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfO36oHWlwYGnHPwmqWzIenCJmDRQ3uDOSRWFLCd9fV4w_Za1zsmwN2xOgQZc9keSpwfznMTP950CmGXnCoLx17zPMpalmfdSjNr5YWWNzVVvrMbZqAeHdxrH2aMDSolP5-aEKSfkVRhxbZXGGsFh_hVK1lt1iOcIBiHNNp5qgWybX_10CcBVDxz9i69g5IYztmoghLPMiPF5lBVJeXHHcM807hySIyZSDKYqmYd8OIKFy3Rid6qxvaZXXYkqxkE1Yl8JcIyvP62g"/></div>
+<div class="bg-white rounded px-2 py-1"><img alt="PayPal" class="h-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCULFYezZextw5feb3jdP7Z0O8KBuBqtQ6LHz7ke3YhI0mX92AYLNZEEBDrXjMfIz2h9XpvJqniFPxhuRpUozA-IcEFd-j2eWf7G6y4yhtSnfEZs9qyVuD2X3V8lUbG6LcAsrsqkIH5dH5sUKe_3d8EW3LcWWXbS5NzrvYWT1GngzVn_bzClkqgkerklxnDX75VfZx3lEp1uu26xr684YxcBvFmsscxWA2xRGhfXLgIwhMUNIZUZFupQo7fKrfUE2xnNCWw08THEyY"/></div>
+<div class="bg-white rounded px-2 py-1"><img alt="Skrill" class="h-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_pjgEDAzDpkuG4lv4gKtJv_2yCX4I2xi6h6D5WEOlQ-Tc5UwUlDx49JjoyeVmIg0HAhbCG9tipMnU0fOl1WYZ5YwbINKWl19Z4PsYa9tl3bBvYyLirhIlyD-XeqrajRcMI_Lso-oKVvJlYQ_Sps6BswMoekgjuCcaXCxxUIm3TWRlTYBWN5kfAZ2fDFB5DiEsdmv6-yM2-Djn0hLBCFXwSy5Zk4ijLUR1eSZllNqgULPZ9Fb2C5qRC6zx9J3RvdgGgGgLheVDPnY"/></div>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Smooth scroll implementation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('py-2', 'shadow-md');
+                header.classList.remove('py-4');
+            } else {
+                header.classList.remove('py-2', 'shadow-md');
+                header.classList.add('py-4');
+            }
+        });
+    </script>
+</body></html>
